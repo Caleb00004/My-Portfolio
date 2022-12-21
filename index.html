@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>My Portfolio website</title>
+        <title>Caleb's Portfolio</title>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,34 +37,35 @@
                 document.getElementById("collapse").addEventListener("click", function() {
                 console.log('clicked')
                 console.log(collapse.style.display)
-
+                
                 if (collapse.style.opacity === "1") {
-                    // collapse.style.display = "none ";
                     collapse.style.opacity = '0'
                     collapse.style.pointerEvents = 'none'
-                    console.log(window.innerWidth)
-                    if (window.innerWidth > '700px') {
-                        collapse.style.opacity = '1'
-                    }
+//                    console.log(window.innerWidth)
+
                 } else {
                     collapse.style.opacity = '1'
                     collapse.style.pointerEvents = 'all'
-                    // collapse.style.display = "flex";
                 }
             })
             
-            document.getElementById('nav-item').addEventListener("click", function() {
-                collapse.style.opacity = '0'
-                collapse.style.pointerEvents = 'none'                
-            })
+            // document.getElementById('nav-item').addEventListener("click", function() {
+            //             collapse.style.opacity = '0'
+            //             collapse.style.pointerEvents = 'none'                
+            // })
 
             const navLinks = document.querySelectorAll('.nav-item')
-            navLinks.forEach((l) => {
-                l.addEventListener('click', () => {
-                    collapse.style.opacity = '0'
-                    collapse.style.pointerEvents = 'none'
+            
+            if (window.innerWidth < 700) {
+                console.log(window.innerWidth)
+            
+                navLinks.forEach((l) => {
+                    l.addEventListener('click', () => {
+                        collapse.style.opacity = '0'
+                        collapse.style.pointerEvents = 'none'
+                    })
                 })
-            })
+            }
             </script>
 
             <script src="script.js"></script>

@@ -119,6 +119,9 @@ header > div >  .fa-bars {
   opacity: 1;
 }
 
+.nav-list {
+  opacity: 1;
+}
 
 @media (max-width:  700px) {
   header .navbar {
