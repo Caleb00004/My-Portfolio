@@ -14,7 +14,7 @@
     </head>
 
     <body>
-        <header>
+        <header id="header">
             <div>
                 <div id="menu" class="fas fa-bars"></div>
                 <a href="/" class="logo"><i class="fab fa-node-js"></i> Caleb</a>
@@ -33,6 +33,7 @@
             
             <script>
                 let collapse = document.getElementById('nav-list')
+                let header = document.getElementById('header')
 
                 document.getElementById("collapse").addEventListener("click", function() {
                 console.log('clicked')
@@ -41,11 +42,12 @@
                 if (collapse.style.opacity === "1") {
                     collapse.style.opacity = '0'
                     collapse.style.pointerEvents = 'none'
-//                    console.log(window.innerWidth)
+                    // header.style.zIndex = '1000'
 
                 } else {
                     collapse.style.opacity = '1'
                     collapse.style.pointerEvents = 'all'
+                    header.style.zIndex = '2000'
                 }
             })
             

@@ -27,7 +27,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+      z-index: 1003;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,21 +129,19 @@ header > div >  .fa-bars {
     /* position: relative; */
   } 
 
-  * {
-    /* outline: 1px solid limegreen; */
-  }
-
   .navbar .nav-list {
     /* display: none; */
-opacity: 0;
+  opacity: 0;
     flex-direction: column;
     position: absolute;
     background-color: white;
+    /* z-index: 0; */
     top: 4.3em;
     right: 0;
     width: 70%;
     height: 91vh;
     transition: all 0.5s ease;
+    pointer-events: none;
   }
 
 
@@ -470,6 +468,7 @@ opacity: 0;
     border-radius: 20px;
     padding-bottom: 5%;
     margin-bottom: 1em;
+    z-index: 1001; /* remove should */
 }
 }
 
