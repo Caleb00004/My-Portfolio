@@ -90,6 +90,7 @@ const MobileProjects = `
 
             <div class="project-details">
                 <h2>MachiCare</h2>
+                <span>React Native</span> <span>Redux</span>
                 <p> A Telemedicine app aimed at seamlessly connecting users to healthcare services and streamlining waiting time.</p>
 
                 <div class="project-icons">
@@ -104,6 +105,7 @@ const MobileProjects = `
 
             <div class="project-details">
                 <h2>Shoe Store<span class="andriod_tag">(Andriod)</span></h2>
+                <span>React Native</span>
                 <p> Shoe Store is a stylish and user-friendly mobile application built with React Native. Browse through a wide selection of trendy shoes on the home screen,
                     each showcased with captivating images and essential details. Dive into the Shoe screen to explore individual shoe models in more detail, with descriptions</p>
 
@@ -119,6 +121,7 @@ const MobileProjects = `
 
             <div class="project-details">
                 <h2>Sweets App<span class="andriod_tag">(Andriod)</span></h2>
+                <span>React Native</span>
                 <p> Sweets App is a delightful mobile application built with React Native, dedicated to satisfying your sweet tooth.
                     Indulge in a wide array of mouthwatering sweets and treats showcased on the home screen, featuring enticing images and enticing descriptions. </p>
 
