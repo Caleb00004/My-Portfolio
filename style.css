@@ -673,6 +673,9 @@ body {
     border-radius: 20px;
     padding-bottom: 5%;
     margin-bottom: 2em;
+    flex: 1; 
+    position: relative;
+    /* overflow: hidden; */
 }
 
 .project-item img {
@@ -682,6 +685,8 @@ body {
 }
 
 .project-details {
+    /* background-color: red; */
+    padding-bottom: 1.5em;
     padding-top: 1em;
     padding-left: 1em;
 }
@@ -708,7 +713,9 @@ body {
 }
 
 .project-icons {
-    margin-top: 1em;
+    position: absolute;
+
+    bottom: 10px;
     display: flex;
 }
 
